@@ -7,8 +7,8 @@
     <h2>Parameter passed: {{ $foo }}</h2>
 
     <ul>
-        @foreach ($tasks as $task)
+        {{-- @foreach ($tasks as $task)
             <li>{{ $task }}</li>
-        @endforeach
+        @endforeach --}}
     </ul>
 @endsection
