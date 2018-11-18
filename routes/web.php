@@ -12,7 +12,23 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $tasks = [
+        'Go to the store',
+        'Go to the market',
+        'Go to work'
+    ];
+
+    // Different ways to pass parameters
+    // return view('welcome')->withTasks($tasks)->withFoo('bar');
+
+    // return view('welcome')->with([
+    //     'foo' => 'bar',
+    //     'tasks' => $tasks
+    // ]); 
+    return view('welcome', [
+        'tasks' => $tasks,
+        'foo' => 'bar'
+    ]);
 });
 
 Route::get('/about', function () {
