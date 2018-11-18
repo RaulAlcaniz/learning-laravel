@@ -1,11 +1,8 @@
-<!doctype html>
-<html lang="{{ app()->getLocale() }}">
+@extends('layout')
 
-    </head>
-    <body>
-        <h1>Here we go!!!!</h1>
-        <p>
-            <a href='/contact'>Contact us</a> to learn more.
-        </p>
-    </body>
-</html>
+@section('title')
+
+@section('content')
+    <h1>My First Website!</h1>
+@endsection
+
